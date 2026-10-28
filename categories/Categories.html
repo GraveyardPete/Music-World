@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MusicWorld | Shop Categories</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/x-icon" href="iconfinal.ico"></head><body>
+<nav id="main-nav">
+    <a href="Categories.html" class="logo-link"><img class="headertext" src="logo_home.png" alt="Music World Logo"></a>
+    <label class="headertext">Music World</label>
+    <label class="search"><input id="searchInput" type="search" placeholder="Search Music World" aria-label="Search Music World"><button id="clearSearch" type="button" aria-label="Clear search">×</button></label>
+    <button class="account" id="vis" type="button">Sign Up</button>
+    <button class="account" type="button">Login</button>
+</nav>
+<nav id="pages">
+    <ul>
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../about us/aboutus2.html">About Us</a></li>
+      <li><a href="../categories/Categories.html">Categories</a></li>
+      <li><a href="../contact us/contactus.html">Contact Us</a></li>
+      <li><a href="../cart/cart.html">Cart</a></li>
+    </ul>
+</nav>
+<main><h1>Shop page</h1><p class="subtitle">Choose a category to explore our instrument collection.</p>
+<section class="grid" id="productGrid"><a class="card category-card" href="guitar.html" data-search="guitars browse acoustic and electric guitars.">
+<img src="images/yamaha-c40m.jpg" alt="Guitars category">
+<div class="name">Guitars</div>
+<div class="subtitle" style="text-align:center;min-height:34px;margin:0 0 8px">Browse acoustic and electric guitars.</div>
+<span class="buy">Browse Guitars</span>
+</a><a class="card category-card" href="drum.html" data-search="drums explore acoustic and electronic drum kits.">
+<img src="images/alesis-turbo-drum.jpg" alt="Drums category">
+<div class="name">Drums</div>
+<div class="subtitle" style="text-align:center;min-height:34px;margin:0 0 8px">Explore acoustic and electronic drum kits.</div>
+<span class="buy">Browse Drums</span>
+</a><a class="card category-card" href="keyboard.html" data-search="keyboards find portable keyboards and digital pianos.">
+<img src="images/casio-ct-s200.jpg" alt="Keyboards category">
+<div class="name">Keyboards</div>
+<div class="subtitle" style="text-align:center;min-height:34px;margin:0 0 8px">Find portable keyboards and digital pianos.</div>
+<span class="buy">Browse Keyboards</span>
+</a><a class="card category-card" href="accessories.html" data-search="accessories amps and useful gear for your setup.">
+<img src="images/fender-champion-amp.jpg" alt="Accessories category">
+<div class="name">Accessories</div>
+<div class="subtitle" style="text-align:center;min-height:34px;margin:0 0 8px">Amps and useful gear for your setup.</div>
+<span class="buy">Browse Accessories</span>
+</a></section></main>
+<script>
+const input=document.getElementById('searchInput');
+function filterCards(){const q=input.value.trim().toLowerCase();document.querySelectorAll('.category-card').forEach(c=>c.style.display=c.dataset.search.includes(q)?'flex':'none');}
+input.addEventListener('input',filterCards);
+document.getElementById('clearSearch').addEventListener('click',()=>{input.value='';filterCards();input.focus();});
+</script></body></html>
