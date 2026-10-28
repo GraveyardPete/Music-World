@@ -1,0 +1,358 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #101820;
+    background: linear-gradient(115deg, #e1edf1, #cbdff0, #f0e9df);
+}
+
+
+nav.top-nav {
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right, #706f79, #c8d1d9);
+    display: flex;
+    align-items: center;
+}
+
+label.headertext {
+    color: white;
+    font-size: 25px;
+    line-height: 55px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+img.headertext {
+    width: 55px;
+    line-height: 55px;
+    padding: 0 10px;
+    object-fit: contain;
+}
+
+.account {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button#vis {
+    color: white;
+    background: black;
+    height: 40px;
+    line-height: normal;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+input#search {
+    height: 40px;
+    width: 50%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+nav#pages {
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(to right, #4f4e55, #777d83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav#pages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav#pages ul li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 10px;
+}
+
+nav#pages ul li a {
+    color: white;
+    font-size: 15px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav#pages ul li a:hover {
+    background: #8f1b15;
+    transition: 0.1s;
+}
+
+.about {
+    min-height: calc(100vh - 90px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 55px 7%;
+}
+
+.left {
+    max-width: 650px;
+}
+
+.left h3 {
+    letter-spacing: 4px;
+    font-size: 17px;
+}
+
+.left h1 {
+    font-size: clamp(38px, 5vw, 68px);
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.left h1 span {
+    color: #5e91bd;
+}
+
+.left p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.explore {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 15px 24px;
+    border-radius: 30px;
+    background: #5e91bd;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore:hover {
+    background: #315d80;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.right img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.team-section {
+    padding: 70px 7%;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.team-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.team-heading h3 {
+    color: #5185b3;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.team-heading h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    margin: 0 0 15px;
+    color: #101820;
+}
+
+.team-heading h1 span {
+    color: #5e91bd;
+}
+
+.team-heading p {
+    max-width: 600px;
+    margin: auto;
+    color: #404b55;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.team-card {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    text-align: center;
+    padding: 25px 18px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #c6d4df;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(50, 80, 110, 0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(50, 80, 110, 0.16);
+}
+
+
+.member-photo {
+    width: 135px;
+    height: 135px;
+    flex-shrink: 0;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c6d0d9, #8baac5);
+    border: 4px solid white;
+    box-shadow: 0 0 0 2px #9bb5ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.member-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-card h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+    color: #263c4d;
+}
+
+.team-card h4 {
+    color: #5185b3;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.team-card p {
+    color: #46535e;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+@media (max-width: 1000px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    nav.top-nav {
+        height: auto;
+        min-height: 60px;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    label.headertext {
+        font-size: 19px;
+    }
+
+    img.headertext {
+        width: 45px;
+    }
+
+    input#search {
+        order: 3;
+        width: 100%;
+        margin: 5px;
+        height: 35px;
+    }
+
+    .account {
+        padding: 0 6px;
+        font-size: 13px;
+    }
+
+    nav#pages {
+        height: auto;
+        min-height: 30px;
+    }
+
+    nav#pages ul {
+        flex-wrap: wrap;
+    }
+
+    nav#pages ul li {
+        margin: 2px;
+    }
+
+    nav#pages ul li a {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .about {
+        padding: 30px 6%;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .team-section {
+        padding: 45px 6%;
+    }
+
+    .team-heading p {
+        font-size: 15px;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-card {
+        padding: 25px;
+    }
+}
