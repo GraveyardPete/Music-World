@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drums | Music World</title>
+  <link rel="stylesheet" href="shoppage.css">
+  <script src="productscript.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="iconfinal.ico">
+</head>
+<body>
+  <nav class="top-nav">
+    <img class="header-logo" src="logo_home.png" alt="Music World logo">
+    <label class="header-title">Music World</label>
+    <input id="search" type="search" placeholder="Search Music World" aria-label="Search Music World">
+    <button class="account signup" id="signup">Sign Up</button>
+    <button class="account" id="login">Login</button>
+  </nav>
+
+  <nav id="pages" aria-label="Main navigation">
+    <ul>
+      <li><a href="../../../home.html">Home</a></li>
+      <li><a href="../../../about us/aboutus2.html">About Us</a></li>
+      <li><a href="../../../categories/Categories.html">Categories</a></li>
+      <li><a href="../../../contact us/contactus.html">Contact Us</a></li>
+      <li><a href="../../../cart/cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="product-card" aria-label="Acoustic guitar product details">
+      <div class="product-visual">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwa7hCDr0o27AXJFjsaIOkalDFh7hBXTYKXZun1CJxQ&s=10">
+        <label class="quantity-label" for="quantity">quantity:</label>
+        <input id="quantity" type="number" min="1" value="1">
+      </div>
+
+      <div class="product-info">
+        <h1>Yamaha Rydeen Drum Set</h1>
+        <p class="price">₱39,950</p>
+
+        <p class="rating">
+          <span class="stars">★★★★☆</span>
+          <span class="rating-number">(4.9/5)</span>
+          <span class="stock">In Stock</span>
+        </p>
+
+        <p class="description">
+          Description: A versatile and well-built 5-piece acoustic drum shell pack from Yamaha’s Rydeen series, ideal for beginner to intermediate drummers who want quality tone and stage presence. Featuring poplar shells, genuine Yamaha clamps, and a P3 bass drum head, this set provides warm, balanced sound and reliable performance for practice, rehearsal, and live playing.
+        </p>
+
+        <div class="actions">
+          <button id="add-to-cart">Add to cart</button>
+          <button id="buy-now">Buy now</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="cart-summary" aria-live="polite">
+      <span class="cart-icon" aria-hidden="true">🛒</span>
+      <div class="cart-details">
+        <strong>Shopping cart</strong>
+        <p id="cart-summary-text">0 item(s) | Subtotal: <strong>₱0</strong></p>
+      </div>
+      <button id="view-cart">View cart</button>
+    </aside>
+  </main>
+</body>
+</html>
