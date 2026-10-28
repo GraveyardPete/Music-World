@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="homestyles.css">
+  <script src="homescript.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="iconfinal.ico">
+</head>
+
+<body>
+  <nav>
+    <img class="headertext" src="logo_home.png" width="55px">
+    
+    <label class="headertext">Music World</label>
+    <input id="search" type="text" placeholder="Search Music World">
+    <button class="account" id="vis">Sign Up</button>
+    <button class="account">Login</button>
+
+    
+  </nav>
+    
+  <nav id="pages">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about us/aboutus2.html">About Us</a></li>
+      <li><a href="categories/Categories.html">Categories</a></li>
+      <li><a href="contact us/contactus.html">Contact Us</a></li>
+      <li><a href="cart/cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="slider-container slider-dimensions">
+      <div class="slider">
+        <div data-img-url="guitar2.png" class="slider-dimensions"></div>
+        <div data-img-url="homepiano.png" class="slider-dimensions"></div>
+        <div data-img-url="homeamp.png" class="slider-dimensions"></div>
+      </div>
+
+      <div class="nav-container slider-dimensions">
+        <button data-index-change="-1">&lt;</button>
+        <div class="index-container">
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        <button data-index-change="1">&gt;</button>
+        </div>
+      
+    </div>
+    
+  </main>
+  
+</body>
+</html>
