@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="icon" type="image/x-icon" href="iconfinal.ico">
+    <link rel="stylesheet" href="../navbarstyle.css">
+</head>
+
+<body>
+
+<nav>
+    <img class="headertext" src="logo_home.png" width="55px" alt="Music World logo">
+    <label class="headertext">Music World</label>
+    <input id="search" type="text" placeholder="Search Music World">
+    <button class="account" id="vis" type="button">Sign Up</button>
+    <button class="account" type="button">Login</button>
+</nav>
+
+<nav id="pages">
+    <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../about-us/aboutus2.html">About Us</a></li>
+        <li><a href="../categories/Categories.html">Categories</a></li>
+        <li><a href="../contactus.html">Contact Us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
+
+<div class="Cart">
+
+    <div class="CartText">
+        <h1>Cart</h1>
+        <span style="color: #afbecd;">(0 Items)</span>
+    </div>
+
+    <hr class="divider">
+
+    <div class="cart-items"></div>
+
+    <hr class="divider">
+
+    <div class="OrderSum">
+        <h2>Order Summary</h2>
+        <div class="Total">
+            <img class="coupon" src="coupon.png" alt="coupon">
+            <input type="text" id="coupontxtbar" name="coupon" placeholder="Enter Coupon Code">
+            <button class="btnapply" type="button">Apply</button>
+        </div>
+    </div>
+
+    <div class="Checkout">
+        <div class="checkout-row">
+            <h3>Estimated Total:</h3>
+            <b><span id="estimated-total" class="total-price">₱0.00</span></b>
+        </div>
+        <button class="btncheckout" type="button" onclick="window.location.href='checkout.html'">
+            Checkout
+        </button>
+    </div>
+
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

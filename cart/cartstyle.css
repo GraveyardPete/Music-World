@@ -1,0 +1,239 @@
+body{
+  margin: 0px;
+}
+html {
+    background-color: white;
+    font-family: helvetica;
+}
+
+.Cart {
+  align-items: center;
+  padding: 5px;
+}
+
+.imgmain {
+  width: 100%;
+  height: 100%;
+}
+
+hr.divider {
+  border-top: 2px solid #706f79;
+}
+
+.CartText{
+  display:flex;
+  align-items: baseline;
+  gap: 15px;
+}
+.CartText h1{
+  margin: 0px;
+}
+
+.OrderSum{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+}
+
+.btnapply {
+  background-color: #7d8893;
+  border: none;
+  color: white;
+  height: 28px;      
+  padding: 0 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0;
+  margin: 0;
+}
+
+.btnapply:hover {
+  background-color: #5c6670;
+}
+
+.coupon{
+  width: auto;
+  height: 38px;
+  margin-right: 5px;
+}
+#coupontxt {
+  width: 250px;
+  height: 38px;
+  border: 1px solid #c3c2c2;
+  border-radius: 0;   /* Removes rounding if you want them sharp-edged together */
+  margin: 0;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+
+.Total {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+#coupontxtbar{
+  width: 50%;
+  padding: 4px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.Checkout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.checkout-row {
+  display: flex;
+  justify-content: space-between; /* Pushes Estimated Total to left, Price to far right */
+  align-items: center;
+  width: 100%;
+}
+
+.checkout-row h3 {
+  margin: 0;
+}
+
+.btncheckout{
+  align-self: flex-end;
+  background-color: #7d8893;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.btncheckout:hover {
+  background-color: #5c6670;
+}
+
+/* Item List Container */
+.cart-items {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  gap: 20px;
+}
+
+.item-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Middle Section: Title, Rating, Shipping */
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.stars {
+  color: #f1c40f;
+  letter-spacing: 2px;
+}
+
+.review-count {
+  color: #666;
+}
+
+.item-shipping {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #333;
+}
+
+.truck-icon {
+  width: 16px;       /* Adjust size as needed */
+  height: auto;
+  display: block;
+}
+
+.in-stock {
+  color: #27ae60;
+}
+
+/* Right Section: Price, Quantity, Remove */
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  min-width: 100px;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 4px;
+  font-size: 14px;
+}
+
+.qty-number {
+  font-size: 14px;
+  padding: 0 4px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.remove-btn:hover {
+  text-decoration: underline;
+}
+
+.item-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+}
