@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.removeItem("appliedCoupon");
             sessionStorage.removeItem("discountCode");
 
-            window.location.href = "home.html";
+            window.location.href = "../home.html";
         } catch {
             alert("Unable to save your order. Please check your browser storage and try again.");
         }
